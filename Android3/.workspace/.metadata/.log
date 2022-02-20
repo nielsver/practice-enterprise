@@ -67,3 +67,16 @@ Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.appli
 
 !ENTRY org.eclipse.core.resources 2 10035 2022-02-20 12:20:53.483
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-02-20 12:24:09.163 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-f978f9c6-3f54-4f3a-b754-8c2e73e44310
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\Documents\GitHub\practice-enterprise\Android3\.workspace javapkgsrv-f978f9c6-3f54-4f3a-b754-8c2e73e44310
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 12:24:12.101
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 12:25:11.821
+!MESSAGE The workspace will exit with unsaved changes in this session.
