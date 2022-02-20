@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+    <AndroidDeviceID>emulator-####;VisualStudio_android-25_x86_phone</AndroidDeviceID>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebuggerType>JavaOnly</DebuggerType>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+    <AndroidDeviceID>emulator-5554;pixel_2_pie_9_0_-_api_28</AndroidDeviceID>
+  </PropertyGroup>
+</Project>

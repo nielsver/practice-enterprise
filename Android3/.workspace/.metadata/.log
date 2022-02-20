@@ -1,0 +1,56 @@
+!SESSION 2022-02-19 15:26:41.553 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-1f2c2d5d-830a-4e0b-a95b-49cc67c0657f
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\source\repos\Android3\.workspace javapkgsrv-1f2c2d5d-830a-4e0b-a95b-49cc67c0657f
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-19 15:32:35.824
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-02-19 15:35:51.202 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-ee7bffe7-21ee-4b30-a9c5-c63bea35561e
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\source\repos\Android3\.workspace javapkgsrv-ee7bffe7-21ee-4b30-a9c5-c63bea35561e
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-19 15:35:55.532
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2022-02-19 15:50:08.374 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-0a0ccaa0-81f7-4327-aceb-5ea25f35c58a
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\source\repos\Android3\.workspace javapkgsrv-0a0ccaa0-81f7-4327-aceb-5ea25f35c58a
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-19 15:50:13.889
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2022-02-20 11:16:47.916 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-d8a9a2fd-95c9-4faf-9558-76c79fc03141
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\source\repos\Android3\.workspace javapkgsrv-d8a9a2fd-95c9-4faf-9558-76c79fc03141
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 11:16:51.011
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 11:20:51.683
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-02-20 12:00:52.673 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_302
+java.vendor=Temurin
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_BE
+Framework arguments:  -application com.microsoft.javapkgsrv.application javapkgsrv-7f617272-72c0-415d-89c9-b12f7ae1408e
+Command-line arguments:  -consoleLog -application com.microsoft.javapkgsrv.application -data C:\Users\User\source\repos\Android3\.workspace javapkgsrv-7f617272-72c0-415d-89c9-b12f7ae1408e
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 12:00:56.493
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-02-20 12:14:40.365
+!MESSAGE The workspace will exit with unsaved changes in this session.
