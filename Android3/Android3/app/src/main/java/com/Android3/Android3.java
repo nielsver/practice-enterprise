@@ -13,6 +13,10 @@ public class Android3 extends Activity
     {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.activity_color_activity_example);
+        
+        relativeLayout = findViewById(R.id.relativeLayout);
+        relativeLayout.setBackgroundColor(color.RED);
         /* Create a TextView and set its text to "Hello world" */
         TextView  tv = new TextView(this);
         tv.setText("test");
