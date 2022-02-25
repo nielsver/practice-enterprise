@@ -12,14 +12,15 @@
         android:id="@+id/textview_first"
         android:layout_width="153dp"
         android:layout_height="107dp"
+        android:layout_marginTop="80dp"
         android:text="@string/welcome_to_our_app_n_tap_next_to_continue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
         tools:visibility="visible" />
 
     <Button
@@ -29,9 +30,9 @@
         android:text="@string/Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@id/textview_first"
+        app:layout_constraintVertical_bias="0.611" />
 
     <TextView
         android:id="@id/button_first"
