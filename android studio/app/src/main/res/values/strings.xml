@@ -2,7 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Run App</string>
+    <string name="first_fragment_label">Run/cycle app</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
@@ -12,5 +12,8 @@
     <string name="welcome_to_our_app_n_tap_next_to_continue">welcome to our app\n tap to login</string>
     <string name="created_by_niels_vervoort_and_cedric_schoeters">created by Niels Vervoort and Cedric Schoeters</string>
     <string name="Login">Login</string>
+    <string name="username">Enter Username</string>
+    <string name="etemail">Enter Email</string>
+    <string name="signin">Sign In with Email</string>
     />
 </resources>
