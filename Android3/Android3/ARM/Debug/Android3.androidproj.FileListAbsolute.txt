@@ -1,3 +1,0 @@
-C:\Users\User\source\repos\Android3\Android3\ARM\Debug\Android3.androidproj.AssemblyReference.cache
-C:\Users\User\source\repos\Android3\Android3\ARM\Debug\Android3.apk.recipe
-C:\Users\User\source\repos\Android3\Android3\ARM\Debug\Android3.apk

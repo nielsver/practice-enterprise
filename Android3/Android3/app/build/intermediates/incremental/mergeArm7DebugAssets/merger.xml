@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\User\source\repos\Android3\Android3\app\src\main\assets"/></dataSet><dataSet config="arm7"><source path="C:\Users\User\source\repos\Android3\Android3\app\src\arm7\assets"/></dataSet><dataSet config="debug"><source path="C:\Users\User\source\repos\Android3\Android3\app\src\debug\assets"/></dataSet><dataSet config="arm7Debug"><source path="C:\Users\User\source\repos\Android3\Android3\app\src\arm7Debug\assets"/></dataSet></merger>
