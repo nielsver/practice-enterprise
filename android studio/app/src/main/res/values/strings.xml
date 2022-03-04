@@ -17,6 +17,6 @@
     <string name="signin">Sign In with Email</string>
     <string name="password">Enter Password</string>
     <string name="account">don\'t have an account yet</string>
-    <string name="register"><a href="www.hoofdpagina.html">register</a></string>
+    <string name="register"><a href="www.google.com">register</a></string>
     />
 </resources>
