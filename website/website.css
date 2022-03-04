@@ -1,12 +1,27 @@
-body
+
+.beginpagina
 {
-background-color:white ;
-font-family: Arial, Helvetica, sans-serif;
+  background-image: url(achtergrond.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:white ;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.header {
+  position: relative;
+  top: 0%;
+  background: black;
+  color: white;
+  font-size: 30px;
 }
 
 h1
 {
     text-align: center;   
+    color:white;
+    margin: 0%;
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -41,8 +56,16 @@ button:hover {
 .loginbtn
 {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 10px;
+    margin: 0%;
+}
+.btnlogin
+{
+  position: absolute;
+  top: 375px;
+  right: 25%;
+  padding: 14px 100px;
 }
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -137,3 +160,17 @@ span.psw {
      width: 100%;
   }
 }
+p.info{
+    color: white;
+    width: 40%;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+h2{
+  color:white;
+  margin-top: 200px;
+  margin-left: 25px;
+}
+
