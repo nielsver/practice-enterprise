@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/background" android:scaleType="fitXY"
+        android:src="@drawable/background" android:scaleType="centerCrop"
         />
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -29,7 +29,10 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/fragment_first"
+        android:layout_width="match_parent"
+        android:layout_height="770dp" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
