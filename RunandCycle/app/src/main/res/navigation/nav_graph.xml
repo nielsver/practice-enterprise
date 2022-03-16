@@ -19,5 +19,18 @@
         android:id="@+id/login"
         android:name="com.example.runandcycle.ui.login.LoginFragment"
         android:label="@string/login"
-        tools:layout="@layout/fragment_login"/>
-</navigation>
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.runandcycle.home"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home"
+        />
+
+    </navigation>
