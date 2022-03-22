@@ -212,4 +212,11 @@ li a:hover:not(.active) {
   float: right;
   width:40%;
 }
+img.logo
+{
+  display: block;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
 
+}
