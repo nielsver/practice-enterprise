@@ -4,20 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
     android:background="@color/white"
-    tools:menu="@menu/bottom_nav_menu">
+    tools:context=".ui.home.HomeFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="411dp"
+        android:layout_height="63dp"
+        android:background="@color/design_default_color_primary"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="1.0"
+        app:navigationIcon="@drawable/ic_baseline_account_circle_24">
+
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:id="@+id/text_home"
-        android:text="@string/home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:textAlignment="center"
         android:gravity="center"
+        android:text="@string/home"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
