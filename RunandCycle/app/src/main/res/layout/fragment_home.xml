@@ -9,6 +9,7 @@
 
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="411dp"
         android:layout_height="63dp"
         android:background="@color/design_default_color_primary"
@@ -18,8 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_home"
-        app:layout_constraintVertical_bias="1.0"
-        app:navigationIcon="@drawable/ic_baseline_account_circle_24">
+        app:layout_constraintVertical_bias="1.0">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -38,4 +38,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profilebutton"
+        android:layout_width="121dp"
+        android:layout_height="67dp"
+        android:drawableTop="@drawable/ic_baseline_account_circle_24"
+        android:text="profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
