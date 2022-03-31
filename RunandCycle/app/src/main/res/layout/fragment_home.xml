@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.home.HomeFragment">
+    >
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="411dp"
-        android:layout_height="63dp"
+        android:layout_width="415dp"
+        android:layout_height="70dp"
         android:background="@color/design_default_color_primary"
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,16 +39,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/profilebutton"
-        android:layout_width="121dp"
-        android:layout_height="67dp"
+        android:layout_width="131dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:drawableTop="@drawable/ic_baseline_account_circle_24"
         android:text="@string/profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2" />
-
-
 
     <Button
         android:id="@+id/button2"
@@ -57,7 +58,8 @@
         android:drawableTop="@drawable/ic_baseline_account_circle_24"
         android:text="@string/activity"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/button3"
