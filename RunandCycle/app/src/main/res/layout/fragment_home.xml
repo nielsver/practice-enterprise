@@ -55,7 +55,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_baseline_account_circle_24"
+        android:drawableTop="@drawable/ic_dashboard_black_24dp"
         android:text="@string/activity"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"

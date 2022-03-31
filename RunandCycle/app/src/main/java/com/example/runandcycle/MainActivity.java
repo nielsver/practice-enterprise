@@ -41,10 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.bottom_nav_menu, menu);
+
         return true;
     }
 
@@ -63,5 +65,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-   
+
 }
