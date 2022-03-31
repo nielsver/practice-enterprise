@@ -31,7 +31,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
-        android:text="@string/home"
+        android:text="@string/activity"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,29 @@
         android:layout_width="121dp"
         android:layout_height="67dp"
         android:drawableTop="@drawable/ic_baseline_account_circle_24"
-        android:text="profile"
+        android:text="@string/profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2" />
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_baseline_account_circle_24"
+        android:text="@string/activity"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_baseline_fiber_manual_record_24"
+        android:text="@string/record"
+        app:layout_constraintEnd_toStartOf="@+id/profilebutton"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
