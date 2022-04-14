@@ -11,11 +11,13 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.runandcycle.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,36 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-       
+      /* bottomNavigationView = findViewById(R.id.bottomNavigationMenu);
+       getSupportFragmentManager().beginTransaction().replace(
+               R.id.text_home,
+               new record()
+
+       ).commit();
+
+       bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+           @Override
+           public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+               Fragment fragment = null;
+               switch (item.getItemId()) {
+
+                   case R.id.navigation_home:
+                       fragment = new home();
+                       break;
+                   case R.id.navigation_record:
+                       fragment = new record();
+                       break;
+                   case R.id.navigation_profile:
+                       fragment = new profile();
+                       break;
+
+
+               }
+                getSupportFragmentManager().beginTransaction().replace(R.id.text_home, fragment).commit();
+
+               return true;
+           }
+       });*/
     }
 
 
