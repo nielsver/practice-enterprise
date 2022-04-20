@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-      /* bottomNavigationView = findViewById(R.id.bottomNavigationMenu);
+       /* bottomNavigationView = findViewById(R.id.bottomNavigationMenu);
        getSupportFragmentManager().beginTransaction().replace(
                R.id.text_home,
                new record()
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
        ).commit();
 
        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+           @SuppressLint("NonConstantResourceId")
            @Override
            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                Fragment fragment = null;
@@ -57,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                }
-                getSupportFragmentManager().beginTransaction().replace(R.id.text_home, fragment).commit();
+               if (fragment != null) {
+                   getSupportFragmentManager().beginTransaction().replace(R.id.text_home, fragment).commit();
+               }
 
                return true;
            }
