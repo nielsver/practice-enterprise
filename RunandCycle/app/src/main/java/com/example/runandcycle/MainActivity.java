@@ -4,67 +4,65 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.runandcycle.databinding.ActivityMainBinding;
+import com.example.runandcycle.ui.login.home;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
     BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        com.example.runandcycle.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.toolbar);
+
+       /* getSupportFragmentManager().beginTransaction().replace(R.id.dashboard,new home()).commit();*/
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-       /* bottomNavigationView = findViewById(R.id.bottomNavigationMenu);
-       getSupportFragmentManager().beginTransaction().replace(
-               R.id.text_home,
-               new record()
-
-       ).commit();
-
-       bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-           @SuppressLint("NonConstantResourceId")
-           @Override
-           public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+      /*  bottomNavigationView = findViewById(R.id.bottomNavigationMenu);
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                Fragment fragment = null;
-               switch (item.getItemId()) {
 
-                   case R.id.navigation_home:
+               switch (item.getItemId()){
+                   case R.id.dashboard:
                        fragment = new home();
                        break;
-                   case R.id.navigation_record:
+                   case R.id.record:
                        fragment = new record();
                        break;
-                   case R.id.navigation_profile:
+                   case R.id.profile:
                        fragment = new profile();
                        break;
 
-
                }
-               if (fragment != null) {
-                   getSupportFragmentManager().beginTransaction().replace(R.id.text_home, fragment).commit();
-               }
+                getSupportFragmentManager().beginTransaction().replace(R.id.bottomNavigationMenu,fragment).commit();
+                return true;
+            }
+        });*/
 
-               return true;
-           }
-       });*/
+
+
     }
 
 
@@ -76,14 +74,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public boolean onSupportNavigateUp() {
