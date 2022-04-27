@@ -8,13 +8,21 @@
     <item android:id="@+id/dashboard"
         android:title="@string/title_dashboard"
           android:icon="@drawable/ic_dashboard_black_24dp"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
         />
     <item android:id="@+id/record"
         android:title="@string/record"
-          android:icon="@drawable/ic_baseline_fiber_manual_record_24"/>
+          android:icon="@drawable/ic_baseline_fiber_manual_record_24"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
     <item android:id="@+id/profile"
         android:title="@string/profile"
           android:icon="@drawable/profile"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
         />
 
 </menu>

@@ -28,7 +28,7 @@
     </fragment>
     <fragment
             android:id="@+id/navigation_home"
-            android:name="com.example.runandcycle.ui.login.home"
+            android:name="com.example.runandcycle.home"
             android:label="@string/title_home"
             tools:layout="@layout/fragment_home" >
 
