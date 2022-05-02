@@ -30,27 +30,8 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        /*BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationMenu);
-        bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.dashboard:
-                    Toast.makeText(MainActivity.this, "dashboard", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.record:
-                    Toast.makeText(MainActivity.this, "record", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.profile:
-                    Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
-                    break;
-            }
-            return true;
-        });*/
-
-
-
-
-
     }
+
 
 
     @Override

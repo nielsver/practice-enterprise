@@ -4,35 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
+    tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/text_dashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:gravity="center"
-        android:text="@string/profile"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationMenu"
-        android:layout_width="414dp"
-        android:layout_height="64dp"
-        android:background="@color/design_default_color_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_home"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/bottom_nav_menu"
-        tools:layout_editor_absoluteY="666dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

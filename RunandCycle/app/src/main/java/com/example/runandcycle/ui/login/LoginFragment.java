@@ -125,19 +125,25 @@ public class LoginFragment extends Fragment {
         });
     }
 
+
+
     public void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         binding.buttonlogin.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(LoginFragment.this)
-                        .navigate(R.id.action_login_to_home);
+                        .navigate(R.id.action_to_MainActivity2);
             }
         });
         if (getContext() != null && getContext().getApplicationContext() != null) {
             Toast.makeText(getContext().getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
         }
     }
+
+
 
     private void showLoginFailed(@StringRes Integer errorString) {
         if (getContext() != null && getContext().getApplicationContext() != null) {

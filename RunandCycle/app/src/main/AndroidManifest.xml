@@ -10,7 +10,14 @@
         android:roundIcon="@drawable/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/Theme.RunandCycle">
-
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".Bottomnavigation"
+            android:exported="false"
+            android:label="@string/title_activity_bottomnavigation" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.runandcycle.home">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
 
-    <item android:id="@+id/dashboard"
-        android:title="@string/title_dashboard"
-          android:icon="@drawable/ic_dashboard_black_24dp"
-        android:enabled="true"
-        app:showAsAction="ifRoom"
-        />
-    <item android:id="@+id/record"
-        android:title="@string/record"
-          android:icon="@drawable/ic_baseline_fiber_manual_record_24"
-        android:enabled="true"
-        app:showAsAction="ifRoom"
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_baseline_fiber_manual_record_24"
+        android:title="@string/record" />
 
-        />
-    <item android:id="@+id/profile"
-        android:title="@string/profile"
-          android:icon="@drawable/profile"
-        android:enabled="true"
-        app:showAsAction="ifRoom"
-        />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
 
 </menu>
