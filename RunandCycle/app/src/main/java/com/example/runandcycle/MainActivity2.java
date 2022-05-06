@@ -1,6 +1,10 @@
 package com.example.runandcycle;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -14,6 +18,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity2 extends AppCompatActivity {
 
     private ActivityMain2Binding binding;
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+    private EditText minutes, seconds;
+    private Button Run;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +40,29 @@ public class MainActivity2 extends AppCompatActivity {
         getSupportActionBar().setTitle("home");
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+
+
+    public void startpop(View view) {
+        CreateDialog();
+    }
+    public void CreateDialog() {
+        dialogBuilder = new AlertDialog.Builder(this);
+        final View contactpopupView = getLayoutInflater().inflate(R.layout.popup, null);
+        minutes = contactpopupView.findViewById(R.id.minutes);
+        seconds = contactpopupView.findViewById(R.id.seconds);
+
+        Run = contactpopupView.findViewById(R.id.Run);
+        dialogBuilder.setView(contactpopupView);
+        dialog = dialogBuilder.create();
+        dialog.show();
+
+        Run.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+    }
+
 
 }

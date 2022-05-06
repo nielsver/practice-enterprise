@@ -32,4 +32,8 @@
     <string name="title_activity_bottomnavigation">Bottomnavigation</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="start">start</string>
+    <string name="run">Run</string>
+    <string name="seconds_km">seconds</string>
+    <string name="minutes_km">minutes</string>
+    <string name="km">/km</string>
 </resources>
