@@ -18,9 +18,16 @@
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
+
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.runandcycle.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <activity android:id="@+id/activity3"
+        tools:layout="@layout/activity_main3"
+        android:name="com.example.runandcycle.MainActivity3"
+        />
+
 </navigation>

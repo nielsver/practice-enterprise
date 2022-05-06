@@ -36,4 +36,5 @@
     <string name="seconds_km">seconds</string>
     <string name="minutes_km">minutes</string>
     <string name="km">/km</string>
+    <string name="runpage">runpage</string>
 </resources>
