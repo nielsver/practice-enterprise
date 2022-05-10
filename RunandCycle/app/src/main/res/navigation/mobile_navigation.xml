@@ -16,7 +16,11 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.runandcycle.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_activity3"
+            app:destination="@id/activity3" />
+    </fragment>
 
 
     <fragment
@@ -24,6 +28,7 @@
         android:name="com.example.runandcycle.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
 
     <activity android:id="@+id/activity3"
         tools:layout="@layout/activity_main3"

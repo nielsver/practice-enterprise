@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".runpage">
 
     <TextView
@@ -23,12 +24,24 @@
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
         android:textSize="@dimen/fab_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timetext"
-        tools:text="00:00" />
+        tools:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="@string/distance"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toEndOf="@+id/timetext"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/finish"

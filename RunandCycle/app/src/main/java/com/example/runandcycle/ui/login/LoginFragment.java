@@ -41,6 +41,7 @@ public class LoginFragment extends Fragment {
 
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -134,8 +135,10 @@ public class LoginFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("amount", String.valueOf(R.id.username));
                 NavHostFragment.findNavController(LoginFragment.this)
-                        .navigate(R.id.action_to_MainActivity2);
+                        .navigate(R.id.action_to_MainActivity2,bundle);
             }
         });
         if (getContext() != null && getContext().getApplicationContext() != null) {

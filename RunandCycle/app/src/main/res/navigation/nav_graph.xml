@@ -22,6 +22,10 @@
         tools:layout="@layout/fragment_login">
     <action android:id="@+id/action_to_MainActivity2"
             app:destination="@+id/mobile_navigation"/>
+        <argument android:name="username"
+                    app:argType="integer"
+                    android:defaultValue="1"
+            />
     </fragment>
     <activity android:id="@+id/mobile_navigation"
             tools:layout="@layout/activity_main2"

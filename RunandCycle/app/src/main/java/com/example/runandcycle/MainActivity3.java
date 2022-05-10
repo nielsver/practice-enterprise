@@ -1,29 +1,25 @@
 package com.example.runandcycle;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class MainActivity3 extends AppCompatActivity {
-    TextView timertext;
+   /* TextView timertext;
     Button finish;
     Button stop;
     Timer timer;
     TimerTask timertask;
     Double time = 0.0;
-    private boolean timerRunning = true;
+    private boolean timerRunning = true;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.fragment_runpage);
         getSupportActionBar().setTitle("recording");
+
+        /*
         timertext = findViewById(R.id.timer);
         finish = findViewById(R.id.finish);
         stop = findViewById(R.id.stop);
@@ -34,10 +30,10 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 startStopTapped(view);
             }
-        });
+        });*/
     }
 
-
+/*
     public void startStopTapped(View view) {
         if (!timerRunning) {
             timerRunning = true;
@@ -79,5 +75,5 @@ public class MainActivity3 extends AppCompatActivity {
 
     private String formatTime(int seconds, int minutes, int hours) {
         return String.format("%02d", hours + " : " + "%02d", minutes + " : " + "%02d", seconds);
-    }
+    }*/
 }

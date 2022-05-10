@@ -16,7 +16,9 @@
         android:theme="@style/Theme.RunandCycle">
         <activity
             android:name=".MainActivity3"
-            android:exported="false" />
+            android:exported="true"
+            android:label="RunandCycle"
+            />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -29,7 +31,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.RunandCycle.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
