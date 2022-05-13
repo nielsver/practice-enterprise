@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavArgument;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,6 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
     private AlertDialog dialog;
     private EditText minutes, seconds;
     private Button Run;
+    int time = R.id.timeact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,10 @@ public class MainActivity2 extends AppCompatActivity {
 
         binding = ActivityMain2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -40,6 +46,13 @@ public class MainActivity2 extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main2);
         getSupportActionBar().setTitle("home");
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        navController.getGraph().findNode(R.id.navigation_notifications)
+                .addArgument("username", new NavArgument.Builder()
+                        .setDefaultValue(username)
+                        .build());
+
+
     }
 
 
@@ -61,10 +74,19 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity2.this, MainActivity3.class);
+                i.putExtra("minutes",R.id.minutes);
+                i.putExtra("second",R.id.seconds);
                 startActivity(i);
             }
         });
     }
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            int newText = data.getIntExtra("time",R.id.timer);
+            
 
 
+        }
+    }
 }

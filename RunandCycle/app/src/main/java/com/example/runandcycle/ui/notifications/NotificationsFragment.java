@@ -8,27 +8,31 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
+import com.example.runandcycle.R;
 import com.example.runandcycle.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+
+
+
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        TextView profile = root.findViewById(R.id.profilename);
+        profile.setText(getArguments().getString("username"));
 
 
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
 
 
         return root;

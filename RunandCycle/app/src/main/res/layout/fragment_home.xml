@@ -13,15 +13,160 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/last_activity"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.056" />
 
+
+    <TextView
+        android:id="@+id/distanceac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/distance"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/distanceackm"
+        app:layout_constraintEnd_toStartOf="@+id/speedac"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceackm"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/_0_0"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgkmph"
+        app:layout_constraintEnd_toStartOf="@+id/kmpha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/kmpha"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/kma"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgkmph"
+        app:layout_constraintEnd_toStartOf="@+id/timeinkmph" />
+
+    <TextView
+        android:id="@+id/speedac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/avg_minutes_km"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeinkmph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <TextView
+        android:id="@+id/timeinkmph"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/_0_00"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeac"
+        app:layout_constraintEnd_toStartOf="@+id/minpkm"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/minpkm"
+        android:layout_width="98dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/min_km"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedac"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/avgkmph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/avg_km_h"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgkmphac"
+        app:layout_constraintEnd_toStartOf="@+id/timeac"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/avgkmphac"
+        android:layout_width="54dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/_00_0"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kmph"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/kmph"
+        android:layout_width="62dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/km_h"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timeact" />
+
+    <TextView
+        android:id="@+id/timeac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/time"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeact"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/timeact"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/_0_00_00"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

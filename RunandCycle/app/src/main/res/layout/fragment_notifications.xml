@@ -7,18 +7,123 @@
     tools:context=".ui.notifications.NotificationsFragment">
 
     <TextView
-        android:id="@+id/text_notifications"
+        android:id="@+id/profilename"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:text="@string/profile"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/alldistance"
+        android:layout_width="84dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/totalkm"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/totaltimetext"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceinkmnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/distanceac"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/notkm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alldistance" />
+
+    <TextView
+        android:id="@+id/notkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+
+        android:text="@string/km"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/totaltimer"
+        app:layout_constraintTop_toBottomOf="@+id/alldistance" />
+
+    <TextView
+        android:id="@+id/totaltimetext"
+        android:layout_width="107dp"
+        android:layout_height="43dp"
+
+        android:layout_marginTop="200dp"
+        android:text="@string/totaltime"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totaltimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/_0_00_00"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totaltimetext" />
+
+    <TextView
+        android:id="@+id/avgspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avgspeed"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/avgtimepkm"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/_0_00"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avgspeed"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/avgtimepkmnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/km"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avgtimepkm"
+        app:layout_constraintTop_toBottomOf="@+id/avgspeed"
+        app:layout_constraintVertical_bias="0.16" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

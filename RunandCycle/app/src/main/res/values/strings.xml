@@ -41,5 +41,21 @@
     <string name="stop">Stop</string>
     <string name="start">Start</string>
     <string name="distance">distance</string>
+    <string name="distanceinkm">/km</string>
+    <string name="speed">speed</string>
+    <string name="km_h">km/h</string>
+    <string name="last_activity">Your latest run</string>
+    <string name="avg_km_h">avg km/h</string>
+    <string name="_0_0">0.0</string>
+    <string name="_00_0">00.0</string>
+    <string name="kma">km</string>
+    <string name="avg_minutes_km">avg minutes/km</string>
+    <string name="min_km">min/km</string>
+    <string name="_0_00_00">0:00:00</string>
+    <string name="_0_00">0:00</string>
+    <string name="totalkm">total km</string>
+    <string name="distanceac">00.00</string>
+    <string name="totaltime">total time</string>
+    <string name="avgspeed">avg speed</string>
 
 </resources>
