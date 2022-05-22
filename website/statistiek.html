@@ -2,9 +2,9 @@
     <head>
         <meta charset="utf-8"/>
         <title>statistieken</title>
-        <link href="website.css" rel="stylesheet" /> 
-        <link href="footer.css " rel="stylesheet" /> 
-
+        <link href="css/website.css" rel="stylesheet" /> 
+        <link href="css/footer.css " rel="stylesheet" /> 
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
        
     </head>
     <body>
@@ -15,13 +15,30 @@
             <li style=float:right><a class="active" href="beginpagina.html">Log uit</a></li>
           </ul>
           <br>
+          <div id="myPlot"></div>
+          <script>
+              var Maand= ["Januari", "Februari", "Maart", "April", "Mei","Juni","Juli","Augustus","September","Oktober","November","December"];
+              var KM = [55, 24, 44, 59, 27, 57, 22, 10, 38, 29, 65, 32];
+              
+              var data = [{
+                x:Maand,
+                y:KM,
+                type:"bar",
+                marker: {color:"rgba(255,0,0,0.6)"}
+              }];
+              
+              var layout = {title:"Kilometers per maand gelopen"};
+              
+              Plotly.newPlot("myPlot", data, layout);
+          </script>
     </body>
+
     <footer class="footer-distributedH">
         <div class="footer-rightH">
 
             <p>Contact Us</p>
 
-            <form action="#" method="post">
+            <form action="mailto:schoeterscedric@gmail.com?subject=formulierresultaat" method="post">
 
                 <input type="text" name="email" placeholder="Email">
                 <textarea name="message" placeholder="Message"></textarea>

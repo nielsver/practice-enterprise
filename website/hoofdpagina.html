@@ -2,11 +2,10 @@
     <head>
         <meta charset="utf-8"/>
         <title>run website</title>
-        <link href="website.css" rel="stylesheet" /> 
-        <link href="footer.css " rel="stylesheet" /> 
-        <script>
-
-        </script>
+        <link href="css/website.css" rel="stylesheet" /> 
+        <link href="css/footer.css " rel="stylesheet" /> 
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+       
 
        
     </head>
@@ -18,15 +17,46 @@
             <li style=float:right><a class="active" href="beginpagina.html">Log uit</a></li>
           </ul>
           <br>
-        <a href="statistiek.html"><img class="fotoA" src="statistiek.png"alt="activiteiten"/></a>
-    <a href="activiteit"><img class="fotoS" src="running_stick_figure.png" alt="statistiek"/></a>
+          <div class="wrapper">
+            <div class="content row">
+                <div class="leftcolumn">
+                    <div id="myPlot"></div>
+          <script>
+              var Maand= ["Januari", "Februari", "Maart", "April", "Mei","Juni","Juli","Augustus","September","Oktober","November","December"];
+              var KM = [55, 24, 44, 59, 27, 57, 22, 10, 38, 29, 65, 32];
+              
+              var data = [{
+                x:Maand,
+                y:KM,
+                type:"bar",
+                marker: {color:"rgba(255,0,0,0.6)"}
+              }];
+              
+              var layout = {title:"Kilometers per maand gelopen"};
+              
+              Plotly.newPlot("myPlot", data, layout);
+          </script>
+                </div>
+                <div class="rightcolumn">
+                    <h3>Activiteit 3</h3>
+                    <p>afstand: 5km </p>
+                    <p>tijd: 28:32min</p>
+                    <p>tempo: 5,66km/h</p>
+                    <div class="mapouterH"><div class="gmap_canvasH">
+                        <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=sint-katelijne-waver&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+          </div>
     </body>
     <footer class="footer-distributedH">
         <div class="footer-rightH">
 
             <p>Contact Us</p>
 
-            <form action="#" method="post">
+            <form action="mailto:schoeterscedric@gmail.com?subject=formulierresultaat" method="post">
 
                 <input type="text" name="email" placeholder="Email">
                 <textarea name="message" placeholder="Message"></textarea>

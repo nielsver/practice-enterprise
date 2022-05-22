@@ -2,21 +2,21 @@
   <head>
         <meta charset="utf-8"/>
         <title>run website</title>
-        <link href="website.css" rel="stylesheet" /> 
-        <link href="footer.css" rel="stylesheet" /> 
+        <link href="css/website.css" rel="stylesheet" /> 
+        <link href="css/footer.css" rel="stylesheet" /> 
   </head>
  
-    <img src="running_stick_figure.png"alt="logo"class="logo">
+    <img src="foto/running_stick_figure.png"alt="logo"class="logo">
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="loginbtn">Login</button>
     <body class="beginpagina">
       
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="hoofdpagina.html" method="post">
+  <form class="modal-content animate" action="hoofdpagina.html" method="submit">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="login.png" alt="Avatar" class="avatar">
+      <img src="foto/login.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -40,10 +40,10 @@
 </div>
 
 <script>
-// Get the modal
+
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -67,7 +67,7 @@ Dit kan je instellen en de app verteld dan dat je sneller of trager moet lopen.
 
 				<p>Contact Us</p>
 
-				<form action="#" method="post">
+				<form action="mailto:schoeterscedric@gmail.com?subject=formulierresultaat" method="post">
 
 					<input type="text" name="email" placeholder="Email">
 					<textarea name="message" placeholder="Message"></textarea>
