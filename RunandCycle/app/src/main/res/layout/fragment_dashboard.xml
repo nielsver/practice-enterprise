@@ -10,7 +10,7 @@
         android:id="@+id/start"
         android:layout_width="127dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="144dp"
         android:onClick="startpop"
 
         android:text="@string/start"

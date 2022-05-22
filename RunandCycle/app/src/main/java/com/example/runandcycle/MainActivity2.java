@@ -1,12 +1,18 @@
 package com.example.runandcycle;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavArgument;
 import androidx.navigation.NavController;
@@ -25,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
     private EditText minutes, seconds;
     private Button Run;
     int time = R.id.timeact;
+    int newText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +60,7 @@ public class MainActivity2 extends AppCompatActivity {
                         .build());
 
 
+
     }
 
 
@@ -65,6 +73,7 @@ public class MainActivity2 extends AppCompatActivity {
         minutes = contactpopupView.findViewById(R.id.minutes);
         seconds = contactpopupView.findViewById(R.id.seconds);
 
+
         Run = contactpopupView.findViewById(R.id.Run);
         dialogBuilder.setView(contactpopupView);
         dialog = dialogBuilder.create();
@@ -74,19 +83,26 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity2.this, MainActivity3.class);
-                i.putExtra("minutes",R.id.minutes);
-                i.putExtra("second",R.id.seconds);
-                startActivity(i);
+                i.putExtra("minutes", String.valueOf(R.id.minutes));
+                i.putExtra("second", String.valueOf(R.id.seconds));
+                someActivityResultLauncher.launch(i);
             }
         });
     }
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK) {
-            int newText = data.getIntExtra("time",R.id.timer);
-            
 
+    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        Intent data = result.getData();
+                        newText = data.getIntExtra("time", R.id.timer);
+                        String s = String.valueOf(newText);
+                        Log.d("mainactivity2", s);
 
-        }
-    }
+                    }
+                }
+            });
 }
