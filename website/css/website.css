@@ -227,17 +227,19 @@ img.logo
   }
   .leftcolumn {
     float: left;
-    width: 50%;
+    width: 45%;
+    
   }
   .rightcolumn {
     float: right;
-    width: 50%;
+    width: 45%;
+   
     
   }
   .activiteit
   {
     width: auto;
-    margin: 5px;
+    margin-left: 30%;
   }
   .mapouter
   {position:relative;
