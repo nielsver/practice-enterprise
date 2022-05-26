@@ -2,7 +2,6 @@ package com.example.runandcycle;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
@@ -37,6 +36,7 @@ public class MainActivity3 extends AppCompatActivity {
     double lon;
     double lat1;
     double lon1;
+    String time;
     private LocationCallback locationCallback;
     private int seconds = 0;
     private boolean running;
@@ -47,11 +47,13 @@ public class MainActivity3 extends AppCompatActivity {
     LocationRequest locationRequest;
     boolean requestingLocationUpdates = false;
 
+
+
     private FusedLocationProviderClient fusedLocationClient;
     public int intpart;
     public double sec;
-    int minint;
-    int secint;
+    int minint = 0;
+    int secint = 0;
     String toslow = "Your going to slow. Run faster";
     String goodpace = "you have found the right pace. Keep it up";
     String tofast = "Your going to fast. Slow down";
@@ -72,29 +74,25 @@ public class MainActivity3 extends AppCompatActivity {
         timeinminkm = findViewById(R.id.timeinminkm);
 
         Bundle extras = getIntent().getExtras();
-        minutes = extras.getString("minutes");
-        second = extras.getString("second");
-        Log.d("mainactivity3", String.valueOf(minutes));
-        Log.d("mainactivity3", String.valueOf(second));
+        if((minutes = extras.getString("minutes") )!= null){
+            minint = Integer.parseInt(minutes);
+        }
+        if((second = extras.getString("second")) != null){
+            secint = Integer.parseInt(second);
+        }
+
 
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
 
-        if(minutes != null && second != null) {
-
-            minint = Integer.parseInt(minutes);
-            secint = Integer.parseInt(second);
-        }
-        if(minutes != null && second == null){
-            minint = Integer.parseInt(minutes);
-            secint = 0;
-        }
-        if(second != null && minutes == null){
-            secint = Integer.parseInt(second);
-            minint = 0;
+        if( minint == 0){
+            CharSequence text = "Minutes or seconds not provided";
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+            finish();
         }
             Log.d("seconds", String.valueOf(secint));
-            if(secint <= 60) {
+            if(secint >= 60) {
                 CharSequence text = "seconds above 60";
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
@@ -214,9 +212,7 @@ public class MainActivity3 extends AppCompatActivity {
                 seconds = 0;
                 minutes = null;
                 second = null;
-                Intent data = new Intent(MainActivity3.this, MainActivity2.class);
-                data.putExtra("time", R.id.timer);
-                setResult(RESULT_OK, data);
+
                 finish();
             }
         });
@@ -313,7 +309,7 @@ public class MainActivity3 extends AppCompatActivity {
                 int secs = seconds % 60;
 
 
-                String time = String.format(Locale.getDefault(),
+                time = String.format(Locale.getDefault(),
                         "%d:%02d:%02d", hours,
                         minutes, secs);
                 timeView.setText(time);
@@ -322,7 +318,7 @@ public class MainActivity3 extends AppCompatActivity {
                     seconds++;
                     distintime = (int) ((intpart * 60) + sec);
                     if((seconds % 30) == 0){
-                        if(secint > distintime){
+                        if(secint < distintime){
                             //to slow
                             int speech = textToSpeech.speak(toslow,TextToSpeech.QUEUE_FLUSH,null);
 
