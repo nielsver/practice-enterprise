@@ -151,7 +151,6 @@ public class MainActivity3 extends AppCompatActivity {
 
                         lon1 = location.getLongitude();
                         lat1 = location.getLatitude();
-                        Log.d("mainactivity3", "old lat " + lat + " new lat "+ lat1);
                     double R = 6371; // Radius of the earth in km
                     double dLat = deg2rad(lat1-lat);  // deg2rad below
                     double dLon = deg2rad(lon1-lon);
@@ -164,16 +163,21 @@ public class MainActivity3 extends AppCompatActivity {
                     double d = R * c; // Distance in km
                     x =  d + x;
                     avgkmph = (x * 1000) / seconds;
-                    kmph = (d * 1000) / 5;
+                    avgkmph = avgkmph * 3.6;
+                    kmph = (d * 1000) / 1;
                     kmph = kmph * 3.6;
-                    minpkm = 60/avgkmph;
+                    minpkm = avgkmph /60;
+                    minpkm = 1 / minpkm;
                     Log.d("seconds", String.valueOf(seconds));
                     String z = String.format("%.1f",kmph);
                     timepkm.setText(z);
-                    Log.d("minperkm" , String.valueOf(minpkm));
                     intpart  = (int) minpkm;
                     sec = minpkm - intpart;
                     sec = sec * 100;
+                    if(sec > 60){
+                        intpart++;
+                        sec = sec -60;
+                    }
                     String r = String.format("%2d" + ":" + "%2f",intpart, sec );
                     timeinminkm.setText(r);
 
