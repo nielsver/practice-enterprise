@@ -7,6 +7,21 @@
     android:orientation="vertical"
     tools:context="com.example.runandcycle.popup">
 
+    <TextView
+        android:id="@+id/fastrun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastrun"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/minutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        android:textAlignment="center"/>
+
     <EditText
         android:id="@+id/minutes"
         android:layout_width="164dp"
@@ -19,6 +34,7 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.368"
+        android:textColor="@color/black"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -37,7 +53,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.427"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/seconds"
@@ -52,7 +69,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minutes" />
+        app:layout_constraintTop_toBottomOf="@+id/minutes"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/Run"

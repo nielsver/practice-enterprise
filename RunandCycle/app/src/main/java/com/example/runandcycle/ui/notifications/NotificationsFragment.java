@@ -30,11 +30,6 @@ public class NotificationsFragment extends Fragment {
         profile.setText(getArguments().getString("username"));
 
 
-
-
-
-
-
         return root;
     }
 

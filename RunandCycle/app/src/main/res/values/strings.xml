@@ -7,7 +7,7 @@
     <string name="next">Next</string>
     <string name="login">Login</string>
 
-    <string name="hello_first_fragment">Application designed and created by \n Niels Vervoort and Cedric Schoeters</string>
+    <string name="hello_first_fragment">Application designed and created by \n Niels Vervoort and Cedric Schoeters\nApp with Running feedback</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -58,5 +58,6 @@
     <string name="totaltime">total time</string>
     <string name="avgspeed">avg speed</string>
     <string name="minutespkm">min/km</string>
+    <string name="fastrun">How fast do you want to run \nIn minutes per kilometer</string>
 
 </resources>
